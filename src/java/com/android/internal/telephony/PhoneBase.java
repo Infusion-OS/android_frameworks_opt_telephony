@@ -246,6 +246,8 @@ public abstract class PhoneBase extends Handler implements Phone {
     private boolean mImsServiceReady = false;
     protected static ImsPhone mImsPhone = null;
 
+    protected int mRadioAccessFamily = RadioAccessFamily.RAF_UNKNOWN;
+
     @Override
     public String getPhoneName() {
         return mName;
